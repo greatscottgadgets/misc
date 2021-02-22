@@ -543,245 +543,25 @@ Wire Wire Line
 Wire Wire Line
 	6100 2300 6100 2550
 $Comp
-L Device:LED D1
-U 1 1 6041CB6E
-P 1200 6400
-F 0 "D1" V 1239 6283 50  0000 R CNN
-F 1 "LED" V 1148 6283 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1200 6400 50  0001 C CNN
-F 3 "~" H 1200 6400 50  0001 C CNN
-	1    1200 6400
+L Connector_Generic:Conn_01x02 J4
+U 1 1 602F2B50
+P 8600 1600
+F 0 "J4" V 8564 1412 50  0000 R CNN
+F 1 "Conn_01x02" V 8473 1412 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 1600 50  0001 C CNN
+F 3 "~" H 8600 1600 50  0001 C CNN
+	1    8600 1600
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R R1
-U 1 1 6041CB64
-P 1200 6800
-F 0 "R1" H 1270 6846 50  0000 L CNN
-F 1 "R" H 1270 6755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1130 6800 50  0001 C CNN
-F 3 "~" H 1200 6800 50  0001 C CNN
-	1    1200 6800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J8
-U 1 1 603F4926
-P 10400 1600
-F 0 "J8" V 10364 1412 50  0000 R CNN
-F 1 "Conn_01x02" V 10273 1412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10400 1600 50  0001 C CNN
-F 3 "~" H 10400 1600 50  0001 C CNN
-	1    10400 1600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP1
-U 1 1 603DE393
-P 2300 6250
-F 0 "TP1" V 2105 6322 50  0000 C CNN
-F 1 "TestPoint" V 2196 6322 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2500 6250 50  0001 C CNN
-F 3 "~" H 2500 6250 50  0001 C CNN
-	1    2300 6250
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 603C0D54
-P 2500 6600
-F 0 "C1" H 2615 6646 50  0000 L CNN
-F 1 "C" H 2615 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2538 6450 50  0001 C CNN
-F 3 "~" H 2500 6600 50  0001 C CNN
-	1    2500 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 603AE4A4
-P 3900 6250
-F 0 "TP2" V 3854 6438 50  0000 L CNN
-F 1 "TestPoint" V 3945 6438 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4100 6250 50  0001 C CNN
-F 3 "~" H 4100 6250 50  0001 C CNN
-	1    3900 6250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 603AB69C
-P 3800 6600
-F 0 "C2" H 3915 6646 50  0000 L CNN
-F 1 "C" H 3915 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 6450 50  0001 C CNN
-F 3 "~" H 3800 6600 50  0001 C CNN
-	1    3800 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:MIC5504-1.8YM5 U1
-U 1 1 603AA3E0
-P 3300 6450
-F 0 "U1" H 3300 6817 50  0000 C CNN
-F 1 "MIC5504-1.8YM5" H 3300 6726 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3300 6050 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 3050 6700 50  0001 C CNN
-	1    3300 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J1
-U 1 1 60376DB4
-P 2150 3750
-F 0 "J1" H 2200 4167 50  0000 C CNN
-F 1 "Conn_02x06_Top_Bottom" H 2200 4076 50  0000 C CNN
-F 2 "CC-test:PinHeader_2x06_P2.54mm_PMOD" H 2150 3750 50  0001 C CNN
-F 3 "~" H 2150 3750 50  0001 C CNN
-	1    2150 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 60371894
-P 6850 4550
-F 0 "TP4" H 6908 4668 50  0000 L CNN
-F 1 "TestPoint" H 6908 4577 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 4550 50  0001 C CNN
-F 3 "~" H 7050 4550 50  0001 C CNN
-	1    6850 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP3
-U 1 1 6036EB00
-P 6850 2500
-F 0 "TP3" H 6908 2618 50  0000 L CNN
-F 1 "TestPoint" H 6908 2527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 2500 50  0001 C CNN
-F 3 "~" H 7050 2500 50  0001 C CNN
-	1    6850 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 6033DF67
-P 4050 5150
-F 0 "R3" V 3843 5150 50  0000 C CNN
-F 1 "33k" V 3934 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3980 5150 50  0001 C CNN
-F 3 "~" H 4050 5150 50  0001 C CNN
-	1    4050 5150
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 6033DF31
-P 6850 4900
-F 0 "R6" H 6920 4946 50  0000 L CNN
-F 1 "18.7K±1%" H 6920 4855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 4900 50  0001 C CNN
-F 3 "~" H 6850 4900 50  0001 C CNN
-	1    6850 4900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 6033DF25
-P 6850 5400
-F 0 "R7" H 6920 5446 50  0000 L CNN
-F 1 "5.49K±1%" H 6920 5355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 5400 50  0001 C CNN
-F 3 "~" H 6850 5400 50  0001 C CNN
-	1    6850 5400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 6032ADA4
-P 4050 3100
-F 0 "R2" V 3843 3100 50  0000 C CNN
-F 1 "33k" V 3934 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3980 3100 50  0001 C CNN
-F 3 "~" H 4050 3100 50  0001 C CNN
-	1    4050 3100
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 60308C0A
-P 6850 2850
-F 0 "R4" H 6920 2896 50  0000 L CNN
-F 1 "18.7K±1%" H 6920 2805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 2850 50  0001 C CNN
-F 3 "~" H 6850 2850 50  0001 C CNN
-	1    6850 2850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J6
-U 1 1 602EC284
-P 9600 3500
-F 0 "J6" H 9707 4367 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 9707 4276 50  0000 C CNN
-F 2 "CC-test:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 9750 3500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9750 3500 50  0001 C CNN
-	1    9600 3500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 602EDEFE
-P 6850 3350
-F 0 "R5" H 6920 3396 50  0000 L CNN
-F 1 "5.49K±1%" H 6920 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 3350 50  0001 C CNN
-F 3 "~" H 6850 3350 50  0001 C CNN
-	1    6850 3350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 602EFE98
-P 8600 2600
-F 0 "J5" V 8564 2412 50  0000 R CNN
-F 1 "Conn_01x02" V 8473 2412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 2600 50  0001 C CNN
-F 3 "~" H 8600 2600 50  0001 C CNN
-	1    8600 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 602F7B06
-P 7600 2800
-F 0 "J2" V 7564 2612 50  0000 R CNN
-F 1 "Conn_01x02" V 7473 2612 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 2800 50  0001 C CNN
-F 3 "~" H 7600 2800 50  0001 C CNN
-	1    7600 2800
-	0    1    -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 602FCB60
-P 7600 4850
-F 0 "J3" V 7564 4662 50  0000 R CNN
-F 1 "Conn_01x02" V 7473 4662 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 4850 50  0001 C CNN
-F 3 "~" H 7600 4850 50  0001 C CNN
-	1    7600 4850
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 602FFC1D
-P 8500 3500
-F 0 "D2" V 8539 3383 50  0000 R CNN
-F 1 "LED" V 8448 3383 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 3500 50  0001 C CNN
-F 3 "~" H 8500 3500 50  0001 C CNN
-	1    8500 3500
+L Connector_Generic:Conn_01x02 J7
+U 1 1 602F67D9
+P 9500 1600
+F 0 "J7" V 9464 1412 50  0000 R CNN
+F 1 "Conn_01x02" V 9373 1412 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9500 1600 50  0001 C CNN
+F 3 "~" H 9500 1600 50  0001 C CNN
+	1    9500 1600
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -796,37 +576,246 @@ F 3 "~" H 8500 3900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 602F67D9
-P 9500 1600
-F 0 "J7" V 9464 1412 50  0000 R CNN
-F 1 "Conn_01x02" V 9373 1412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9500 1600 50  0001 C CNN
-F 3 "~" H 9500 1600 50  0001 C CNN
-	1    9500 1600
+L Device:LED D2
+U 1 1 602FFC1D
+P 8500 3500
+F 0 "D2" V 8539 3383 50  0000 R CNN
+F 1 "LED" V 8448 3383 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 3500 50  0001 C CNN
+F 3 "~" H 8500 3500 50  0001 C CNN
+	1    8500 3500
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 602F2B50
-P 8600 1600
-F 0 "J4" V 8564 1412 50  0000 R CNN
-F 1 "Conn_01x02" V 8473 1412 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 1600 50  0001 C CNN
-F 3 "~" H 8600 1600 50  0001 C CNN
-	1    8600 1600
+L Connector_Generic:Conn_01x02 J3
+U 1 1 602FCB60
+P 7600 4850
+F 0 "J3" V 7564 4662 50  0000 R CNN
+F 1 "Conn_01x02" V 7473 4662 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 4850 50  0001 C CNN
+F 3 "~" H 7600 4850 50  0001 C CNN
+	1    7600 4850
 	0    1    -1   0   
 $EndComp
 $Comp
-L CC-test:74AUP2G126 U3
-U 2 1 60310A71
-P 6050 4650
-F 0 "U3" H 6025 4475 50  0000 C CNN
-F 1 "74AUP2G126" H 6025 4384 50  0000 C CNN
-F 2 "CC-test:XSON-8_1.95x1mm_P0.5mm" H 6050 4650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AUP2G126.pdf" H 6050 4650 50  0001 C CNN
-	2    6050 4650
+L Connector_Generic:Conn_01x02 J2
+U 1 1 602F7B06
+P 7600 2800
+F 0 "J2" V 7564 2612 50  0000 R CNN
+F 1 "Conn_01x02" V 7473 2612 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 2800 50  0001 C CNN
+F 3 "~" H 7600 2800 50  0001 C CNN
+	1    7600 2800
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 602EFE98
+P 8600 2600
+F 0 "J5" V 8564 2412 50  0000 R CNN
+F 1 "Conn_01x02" V 8473 2412 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 2600 50  0001 C CNN
+F 3 "~" H 8600 2600 50  0001 C CNN
+	1    8600 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 602EDEFE
+P 6850 3350
+F 0 "R5" H 6920 3396 50  0000 L CNN
+F 1 "5.49K±1%" H 6920 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 3350 50  0001 C CNN
+F 3 "~" H 6850 3350 50  0001 C CNN
+	1    6850 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J6
+U 1 1 602EC284
+P 9600 3500
+F 0 "J6" H 9707 4367 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 9707 4276 50  0000 C CNN
+F 2 "CC-test:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 9750 3500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9750 3500 50  0001 C CNN
+	1    9600 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60308C0A
+P 6850 2850
+F 0 "R4" H 6920 2896 50  0000 L CNN
+F 1 "18.7K±1%" H 6920 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 2850 50  0001 C CNN
+F 3 "~" H 6850 2850 50  0001 C CNN
+	1    6850 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6032ADA4
+P 4050 3100
+F 0 "R2" V 3843 3100 50  0000 C CNN
+F 1 "33k" V 3934 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3980 3100 50  0001 C CNN
+F 3 "~" H 4050 3100 50  0001 C CNN
+	1    4050 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 6033DF25
+P 6850 5400
+F 0 "R7" H 6920 5446 50  0000 L CNN
+F 1 "5.49K±1%" H 6920 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 5400 50  0001 C CNN
+F 3 "~" H 6850 5400 50  0001 C CNN
+	1    6850 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6033DF31
+P 6850 4900
+F 0 "R6" H 6920 4946 50  0000 L CNN
+F 1 "18.7K±1%" H 6920 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6780 4900 50  0001 C CNN
+F 3 "~" H 6850 4900 50  0001 C CNN
+	1    6850 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6033DF67
+P 4050 5150
+F 0 "R3" V 3843 5150 50  0000 C CNN
+F 1 "33k" V 3934 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3980 5150 50  0001 C CNN
+F 3 "~" H 4050 5150 50  0001 C CNN
+	1    4050 5150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 6036EB00
+P 6850 2500
+F 0 "TP3" H 6908 2618 50  0000 L CNN
+F 1 "TestPoint" H 6908 2527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 2500 50  0001 C CNN
+F 3 "~" H 7050 2500 50  0001 C CNN
+	1    6850 2500
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60371894
+P 6850 4550
+F 0 "TP4" H 6908 4668 50  0000 L CNN
+F 1 "TestPoint" H 6908 4577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 4550 50  0001 C CNN
+F 3 "~" H 7050 4550 50  0001 C CNN
+	1    6850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J1
+U 1 1 60376DB4
+P 2150 3750
+F 0 "J1" H 2200 4167 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 2200 4076 50  0000 C CNN
+F 2 "CC-test:PinHeader_2x06_P2.54mm_PMOD" H 2150 3750 50  0001 C CNN
+F 3 "~" H 2150 3750 50  0001 C CNN
+	1    2150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MIC5504-1.8YM5 U1
+U 1 1 603AA3E0
+P 3300 6450
+F 0 "U1" H 3300 6817 50  0000 C CNN
+F 1 "MIC5504-1.8YM5" H 3300 6726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3300 6050 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 3050 6700 50  0001 C CNN
+	1    3300 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 603AB69C
+P 3800 6600
+F 0 "C2" H 3915 6646 50  0000 L CNN
+F 1 "C" H 3915 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 6450 50  0001 C CNN
+F 3 "~" H 3800 6600 50  0001 C CNN
+	1    3800 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 603AE4A4
+P 3900 6250
+F 0 "TP2" V 3854 6438 50  0000 L CNN
+F 1 "TestPoint" V 3945 6438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4100 6250 50  0001 C CNN
+F 3 "~" H 4100 6250 50  0001 C CNN
+	1    3900 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 603C0D54
+P 2500 6600
+F 0 "C1" H 2615 6646 50  0000 L CNN
+F 1 "C" H 2615 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2538 6450 50  0001 C CNN
+F 3 "~" H 2500 6600 50  0001 C CNN
+	1    2500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 603DE393
+P 2300 6250
+F 0 "TP1" V 2105 6322 50  0000 C CNN
+F 1 "TestPoint" V 2196 6322 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2500 6250 50  0001 C CNN
+F 3 "~" H 2500 6250 50  0001 C CNN
+	1    2300 6250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 603F4926
+P 10400 1600
+F 0 "J8" V 10364 1412 50  0000 R CNN
+F 1 "Conn_01x02" V 10273 1412 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10400 1600 50  0001 C CNN
+F 3 "~" H 10400 1600 50  0001 C CNN
+	1    10400 1600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6041CB64
+P 1200 6800
+F 0 "R1" H 1270 6846 50  0000 L CNN
+F 1 "R" H 1270 6755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1130 6800 50  0001 C CNN
+F 3 "~" H 1200 6800 50  0001 C CNN
+	1    1200 6800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6041CB6E
+P 1200 6400
+F 0 "D1" V 1239 6283 50  0000 R CNN
+F 1 "LED" V 1148 6283 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1200 6400 50  0001 C CNN
+F 3 "~" H 1200 6400 50  0001 C CNN
+	1    1200 6400
+	0    1    -1   0   
 $EndComp
 $Comp
 L CC-test:74AUP2G126 U3
@@ -834,9 +823,24 @@ U 1 1 6030FDFA
 P 6050 2600
 F 0 "U3" H 5750 2450 50  0000 C CNN
 F 1 "74AUP2G126" H 5750 2350 50  0000 C CNN
-F 2 "CC-test:XSON-8_1.95x1mm_P0.5mm" H 6050 2600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AUP2G126.pdf" H 6050 2600 50  0001 C CNN
+F 2 "CC-test:X2-DFN1210-8_1.2x1mm_P0.3mm" H 6050 2600 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/74AUP2G126.pdf" H 6050 2600 50  0001 C CNN
+F 4 "Diodes, Inc." H 6050 2600 50  0001 C CNN "Manufacturer"
+F 5 "74AUP2G126RA3-7" H 6050 2600 50  0001 C CNN "Part Number"
 	1    6050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CC-test:74AUP2G126 U3
+U 2 1 60310A71
+P 6050 4650
+F 0 "U3" H 6025 4475 50  0000 C CNN
+F 1 "74AUP2G126" H 6025 4384 50  0000 C CNN
+F 2 "CC-test:X2-DFN1210-8_1.2x1mm_P0.3mm" H 6050 4650 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/74AUP2G126.pdf" H 6050 4650 50  0001 C CNN
+F 4 "Diodes, Inc." H 6050 4650 50  0001 C CNN "Manufacturer"
+F 5 "74AUP2G126RA3-7" H 6050 4650 50  0001 C CNN "Part Number"
+	2    6050 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -845,8 +849,10 @@ U 1 1 60533C6F
 P 4800 2600
 F 0 "U2" H 4500 2450 50  0000 C CNN
 F 1 "74AUP2G126" H 4500 2350 50  0000 C CNN
-F 2 "CC-test:XSON-8_1.95x1mm_P0.5mm" H 4800 2600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4800 2600 50  0001 C CNN
+F 2 "CC-test:X2-DFN1210-8_1.2x1mm_P0.3mm" H 4800 2600 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/74AUP2G126.pdf" H 4800 2600 50  0001 C CNN
+F 4 "Diodes, Inc." H 4800 2600 50  0001 C CNN "Manufacturer"
+F 5 "74AUP2G126RA3-7" H 4800 2600 50  0001 C CNN "Part Number"
 	1    4800 2600
 	1    0    0    -1  
 $EndComp
@@ -856,8 +862,10 @@ U 2 1 605347A2
 P 4800 4650
 F 0 "U2" H 4775 4475 50  0000 C CNN
 F 1 "74AUP2G126" H 4775 4384 50  0000 C CNN
-F 2 "CC-test:XSON-8_1.95x1mm_P0.5mm" H 4800 4650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4800 4650 50  0001 C CNN
+F 2 "CC-test:X2-DFN1210-8_1.2x1mm_P0.3mm" H 4800 4650 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/74AUP2G126.pdf" H 4800 4650 50  0001 C CNN
+F 4 "Diodes, Inc." H 4800 4650 50  0001 C CNN "Manufacturer"
+F 5 "74AUP2G126RA3-7" H 4800 4650 50  0001 C CNN "Part Number"
 	2    4800 4650
 	1    0    0    -1  
 $EndComp
