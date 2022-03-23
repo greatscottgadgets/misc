@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DC1722J5005AHF)(type Legacy)(uri ${KIPRJMOD}/DC1722J5005AHF.lib)(options "")(descr ""))
+)
