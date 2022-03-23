@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name balun-b0310j50100ahf)(type Legacy)(uri ${KIPRJMOD}/balun-b0310j50100ahf.lib)(options "")(descr ""))
+)
