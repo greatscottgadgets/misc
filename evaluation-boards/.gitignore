@@ -1,3 +1,6 @@
+# KiCad local project settings
+*.kicad_prl
+
 # kicad backup files
 $savepcb.*
 *.000
