@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "eval")(type "KiCad")(uri "/home/mossmann/src/misc/evaluation-boards/eval.kicad_sym")(options "")(descr ""))
+)
