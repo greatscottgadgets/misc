@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "eval")(type "KiCad")(uri "${KIPRJMOD}/../eval.pretty")(options "")(descr ""))
+)
