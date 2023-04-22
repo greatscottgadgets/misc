@@ -494,9 +494,9 @@
   ],
   "text_variables": {
     "COPYRIGHT": "Copyright 2023 Great Scott Gadgets",
-    "DATE": "2023-04-21",
+    "DATE": "2023-04-22",
     "LICENSE": "Licensed under the CERN-OHL-P v2",
     "TITLE": "RF Switch DPDT Evaluation",
-    "VERSION": "0.1.0"
+    "VERSION": "0.1.1"
   }
 }
