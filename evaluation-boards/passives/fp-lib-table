@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name "gsg-modules")(type "KiCad")(uri "${KIPRJMOD}/../gsg-kicad-lib/gsg-modules.pretty")(options "")(descr ""))
   (lib (name "passives")(type "KiCad")(uri "${KIPRJMOD}/passives.pretty")(options "")(descr ""))
+  (lib (name "sma-variants")(type "KiCad")(uri "${KIPRJMOD}/../trace-width/sma-variants.pretty")(options "")(descr ""))
 )
