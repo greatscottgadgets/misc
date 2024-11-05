@@ -5858,7 +5858,7 @@
 				)
 			)
 		)
-		(property "Footprint" "gsg-modules:TSLP-7-1"
+		(property "Footprint" "rf-amps:TSLP-7-1"
 			(at 83.82 64.77 0)
 			(effects
 				(font
