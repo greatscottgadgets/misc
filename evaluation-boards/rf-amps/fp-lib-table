@@ -1,4 +1,6 @@
 (fp_lib_table
-  (lib (name gsg-modules)(type KiCad)(uri ${KIPRJMOD}/../gsg-kicad-lib/gsg-modules.pretty)(options "")(descr ""))
+  (version 7)
+  (lib (name "gsg-modules")(type "KiCad")(uri "${KIPRJMOD}/../gsg-kicad-lib/gsg-modules.pretty")(options "")(descr ""))
   (lib (name "sma-variants")(type "KiCad")(uri "${KIPRJMOD}/../trace-width/sma-variants.pretty")(options "")(descr ""))
+  (lib (name "rf-amps")(type "KiCad")(uri "${KIPRJMOD}/rf-amps.pretty")(options "")(descr ""))
 )

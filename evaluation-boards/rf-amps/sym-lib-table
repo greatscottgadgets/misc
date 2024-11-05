@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name gsg-symbols)(type Legacy)(uri ${KIPRJMOD}/../gsg-kicad-lib/gsg-symbols.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "gsg-symbols")(type "Legacy")(uri "${KIPRJMOD}/../gsg-kicad-lib/gsg-symbols.lib")(options "")(descr ""))
+  (lib (name "rf-amps")(type "KiCad")(uri "${KIPRJMOD}/rf-amps.kicad_sym")(options "")(descr ""))
 )
