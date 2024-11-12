@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "eval")(type "KiCad")(uri "${KIPRJMOD}/../eval.pretty")(options "")(descr ""))
   (lib (name "gsg-modules")(type "KiCad")(uri "${KIPRJMOD}/../gsg-kicad-lib/gsg-modules.pretty")(options "")(descr ""))
+  (lib (name "sma-variants")(type "KiCad")(uri "/home/mossmann/src/misc/evaluation-boards/trace-width/sma-variants.pretty")(options "")(descr ""))
 )
