@@ -1,0 +1,190 @@
+(footprint "TSLP-2-19"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "https://www.infineon.com/cms/en/product/packages/PG-TSLP/PG-TSLP-2-19/")
+	(tags "PG-TSLP-2-19")
+	(property "Reference" "REF**"
+		(at 0 -0.95 0)
+		(layer "F.SilkS")
+		(uuid "3faed8ae-d921-48a6-bb9a-b832611ccd98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TSLP-2-19"
+		(at 0 1.05 0)
+		(layer "F.Fab")
+		(uuid "fee98d89-86c9-4e8e-a3d6-58dff1845899")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d1a8bbd3-75d4-48db-ac1a-566b1f7288c7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ac01387b-d6e2-4e93-8765-b6d959a8a25e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "203553d7-fdba-44cc-b40f-7a2445805e5a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.65 0.45)
+		(end 0.65 -0.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "29d43914-63c6-45c8-8031-10fdec27a7ee")
+	)
+	(fp_line
+		(start -0.5 -0.3)
+		(end 0.5 -0.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cf50dd1f-48c0-46fe-b2a3-c56ba45d0917")
+	)
+	(fp_line
+		(start -0.5 0.3)
+		(end -0.5 -0.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "237d2372-804b-44e2-8988-0e641cf04b2d")
+	)
+	(fp_line
+		(start 0.5 -0.3)
+		(end 0.5 0.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "094f7a98-1836-424e-96d8-ccde34e879fe")
+	)
+	(fp_line
+		(start 0.5 0.3)
+		(end -0.5 0.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cf9e32e2-ff9f-4331-9917-2415cfb1e50b")
+	)
+	(fp_rect
+		(start -0.5 -0.3)
+		(end -0.3 0.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "1f129847-e0c1-44c8-95ec-900a58da512a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.65 180)
+		(layer "F.Fab")
+		(uuid "12ba2eb6-bd23-4b8f-99ee-f9e9a7f1eeb1")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.04)
+			)
+		)
+	)
+	(pad "" smd rect
+		(at -0.33 0 90)
+		(size 0.45 0.28)
+		(layers "F.Paste")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin -0.05)
+		(clearance 0.05)
+		(uuid "12c390e1-4009-4704-8efe-ed86f2c4e109")
+	)
+	(pad "" smd rect
+		(at 0.33 0 90)
+		(size 0.45 0.28)
+		(layers "F.Paste")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin -0.05)
+		(clearance 0.05)
+		(uuid "0309b84e-8df3-4198-a374-f2b99b45cab0")
+	)
+	(pad "1" smd rect
+		(at -0.325 0 90)
+		(size 0.6 0.35)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin -0.05)
+		(clearance 0.05)
+		(uuid "a0a571e8-761a-4861-89bd-648c09e0c12d")
+	)
+	(pad "2" smd rect
+		(at 0.325 0 90)
+		(size 0.6 0.35)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin -0.05)
+		(clearance 0.05)
+		(uuid "e10e69b5-562e-432d-9bd0-f8ecad1c7bda")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_DSN0603-2_0.6x0.3mm_P0.4mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

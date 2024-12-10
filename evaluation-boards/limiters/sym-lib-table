@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name gsg-symbols)(type Legacy)(uri ${KIPRJMOD}/../gsg-kicad-lib/gsg-symbols.lib)(options "")(descr ""))
-  (lib (name limiters)(type Legacy)(uri ${KIPRJMOD}/limiters.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "gsg-symbols")(type "Legacy")(uri "${KIPRJMOD}/../gsg-kicad-lib/gsg-symbols.lib")(options "")(descr ""))
+  (lib (name "eval")(type "KiCad")(uri "${KIPRJMOD}/../eval.kicad_sym")(options "")(descr ""))
 )
