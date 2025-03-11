@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.254
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|149477000|44705000|afda4bfe-3f59-4a43-951f-9009c81f8d8f|fed73ba1-3cfe-4099-9ff3-e0e97b3f1cba",
+        "courtyards_overlap|164077000|44705000|916d84f3-e857-483e-97df-1de84d99674d|9089581a-975e-4970-8fcf-216ebbdce5ec",
+        "isolated_copper|148917648|54831352|3a2dc370-2ec2-45f7-a016-4eb4f3db9f0c|00000000-0000-0000-0000-000000000000",
+        "isolated_copper|168623508|54817540|8360f7b1-84be-47cf-929d-a7ebc83030fb|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -180,6 +185,7 @@
       ],
       "track_widths": [
         0.0,
+        0.18,
         0.25,
         0.36576
       ],
@@ -686,10 +692,10 @@
     ]
   ],
   "text_variables": {
-    "COPYRIGHT": "Copyright 2024 Great Scott Gadgets",
-    "DATE": "2024-11-13",
+    "COPYRIGHT": "Copyright 2024-2025 Great Scott Gadgets",
+    "DATE": "2025-03-11",
     "LICENSE": "Licensed under the CERN-OHL-P v2",
     "TITLE": "Filters",
-    "VERSION": "0.2.0"
+    "VERSION": "0.3.0"
   }
 }
