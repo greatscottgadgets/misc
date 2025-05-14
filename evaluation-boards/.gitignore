@@ -10,6 +10,7 @@ $savepcb.*
 *.kicad_sch-bak
 *.sch-bak
 _autosave*
+*-backups/*
 
 # kicad cache files
 # *-cache.lib not ignored, so schematic can be viewed without libraries
