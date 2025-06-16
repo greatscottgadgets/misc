@@ -4,9 +4,9 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "https://www.infineon.com/cms/en/product/packages/PG-TSLP/PG-TSLP-3-9/")
-	(tags "PG-TSLP-3-9")
+	(tags "PG-TSLP-3-9 SC-101 SOT-883")
 	(property "Reference" "REF**"
-		(at 0 -0.95 0)
+		(at 0 -1.15 0)
 		(layer "F.SilkS")
 		(uuid "47019710-316d-4344-812d-566077601784")
 		(effects
@@ -55,14 +55,34 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -0.7 -0.3)
-		(end -0.7 0.3)
+		(start -0.65 -0.45)
+		(end -0.65 0.45)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
 		(uuid "5cac0625-38b4-423c-8f57-b98a17438247")
+	)
+	(fp_line
+		(start -0.65 -0.45)
+		(end 0 -0.45)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ec818a81-5358-4352-bf36-8423b0f8a3ac")
+	)
+	(fp_line
+		(start -0.65 0.45)
+		(end 0 0.45)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c9888c8c-03e2-4d76-989b-3b851ba41bff")
 	)
 	(fp_rect
 		(start -0.65 0.45)
@@ -167,43 +187,35 @@
 		(clearance 0.05)
 		(uuid "0309b84e-8df3-4198-a374-f2b99b45cab0")
 	)
-	(pad "1" smd rect
+	(pad "1" smd roundrect
 		(at -0.275 -0.1875)
 		(size 0.35 0.225)
 		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.125)
 		(solder_mask_margin 0.05)
 		(solder_paste_margin -0.05)
 		(clearance 0.05)
 		(uuid "a0a571e8-761a-4861-89bd-648c09e0c12d")
 	)
-	(pad "2" smd rect
+	(pad "2" smd roundrect
 		(at -0.275 0.1875)
 		(size 0.35 0.225)
 		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.125)
 		(solder_mask_margin 0.05)
 		(solder_paste_margin -0.05)
 		(clearance 0.05)
 		(uuid "39cf9957-3c2f-423d-93d4-baabcf1ee129")
 	)
-	(pad "3" smd rect
+	(pad "3" smd roundrect
 		(at 0.325 0)
 		(size 0.45 0.6)
 		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.125)
 		(solder_mask_margin 0.05)
 		(solder_paste_margin -0.05)
 		(clearance 0.05)
 		(uuid "8ff6ffdf-f2b7-4c7f-b0f6-b8f2106ffab2")
 	)
 	(embedded_fonts no)
-	(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_DSN0603-2_0.6x0.3mm_P0.4mm.wrl"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )
