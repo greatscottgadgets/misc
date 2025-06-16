@@ -1,0 +1,115 @@
+(footprint "Square_Pad_0.364x0.364mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SMD rectangular pad, 0.364 mm side length")
+	(tags "test point SMD pad rectangle square")
+	(property "Reference" "REF**"
+		(at 0 -0.898 0)
+		(layer "F.SilkS")
+		(uuid "57854389-d614-41bc-badd-9e50c042f000")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Square_Pad_0.364x0.364mm"
+		(at 0 1 0)
+		(layer "F.Fab")
+		(uuid "ffbacf47-0bca-42da-9556-58707a172b94")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "60705c60-ce89-4d2e-9646-ced329925477")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35b5fc35-3c5a-44e3-b9ea-03dcdfe1cc53")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -0.2 -0.2)
+		(end -0.2 0.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f5ce72f9-16a2-44eb-9fb0-dd6b06181714")
+	)
+	(fp_line
+		(start -0.2 -0.2)
+		(end 0.2 -0.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "763e2beb-ec05-429e-97a1-9f865cc85d06")
+	)
+	(fp_line
+		(start 0.2 0.2)
+		(end -0.2 0.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "17be16ce-9017-475b-9240-12e70665b829")
+	)
+	(fp_line
+		(start 0.2 0.2)
+		(end 0.2 -0.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "64318e0f-09d7-4b24-aa3d-4735d2d01289")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.9 0)
+		(layer "F.Fab")
+		(uuid "2db9ed6b-9c42-4990-8b32-fddeb89b4566")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 0.364 0.364)
+		(layers "F.Cu")
+		(uuid "c7a53b80-2670-4411-8770-45df62759000")
+	)
+	(embedded_fonts no)
+)

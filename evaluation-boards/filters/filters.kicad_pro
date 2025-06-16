@@ -59,10 +59,14 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|149477000|44705000|afda4bfe-3f59-4a43-951f-9009c81f8d8f|fed73ba1-3cfe-4099-9ff3-e0e97b3f1cba",
-        "courtyards_overlap|164077000|44705000|916d84f3-e857-483e-97df-1de84d99674d|9089581a-975e-4970-8fcf-216ebbdce5ec",
-        "isolated_copper|148917648|54831352|3a2dc370-2ec2-45f7-a016-4eb4f3db9f0c|00000000-0000-0000-0000-000000000000",
-        "isolated_copper|168623508|54817540|8360f7b1-84be-47cf-929d-a7ebc83030fb|00000000-0000-0000-0000-000000000000"
+        [
+          "courtyards_overlap|149477000|44705000|afda4bfe-3f59-4a43-951f-9009c81f8d8f|fed73ba1-3cfe-4099-9ff3-e0e97b3f1cba",
+          ""
+        ],
+        [
+          "courtyards_overlap|164077000|44705000|9089581a-975e-4970-8fcf-216ebbdce5ec|916d84f3-e857-483e-97df-1de84d99674d",
+          ""
+        ]
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -75,16 +79,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -95,9 +102,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -109,10 +118,13 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -125,6 +137,7 @@
         "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.2,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.0,
@@ -142,10 +155,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -187,7 +201,7 @@
         0.0,
         0.18,
         0.25,
-        0.36576
+        0.364
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -238,6 +252,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -432,10 +447,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -448,9 +468,14 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -462,7 +487,7 @@
   },
   "meta": {
     "filename": "filters.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -477,6 +502,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.36576,
         "via_diameter": 0.45,
@@ -485,7 +511,7 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -638,10 +664,23 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -676,6 +715,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -693,9 +733,9 @@
   ],
   "text_variables": {
     "COPYRIGHT": "Copyright 2024-2025 Great Scott Gadgets",
-    "DATE": "2025-03-11",
+    "DATE": "2025-06-15",
     "LICENSE": "Licensed under the CERN-OHL-P v2",
     "TITLE": "Filters",
-    "VERSION": "0.3.0"
+    "VERSION": "0.4.0"
   }
 }
